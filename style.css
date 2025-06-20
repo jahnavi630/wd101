@@ -1,0 +1,144 @@
+/* Reset default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General body styling */
+  body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 40px;
+  }
+  
+  /* --- Form Container --- */
+  form {
+    background-color: #fff;
+    padding: 25px 30px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* --- Form Headings --- */
+  form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* --- Form Labels --- */
+  label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  
+  /* --- Input Fields --- */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  
+  /* --- Date Picker Styling --- */
+  .date-picker {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+  }
+  
+  .calendar-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* --- Checkbox Group --- */
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #28a745;
+  }
+  
+  .checkbox-group label {
+    cursor: pointer;
+    font-weight: normal;
+  }
+  
+  /* --- Submit Button --- */
+  button[type="submit"] {
+    width: auto;
+    padding: 12px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
+  /* --- Entries Container --- */
+  .entries-container {
+    background: #fff;
+    width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .entries-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* --- Table Styling --- */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #e0e0e0;
+    padding: 12px 10px;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
