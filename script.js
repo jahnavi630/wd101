@@ -59,4 +59,20 @@ form.addEventListener("submit", (e) => {
   form.reset();
 });
 
+
+function getTodaysEntries() {
+  const today = new Date().toISOString().split('T')[0]; // "YYYY-MM-DD"
+  const entries = JSON.parse(localStorage.getItem("users") || "[]");
+
+  const todaysEntries = entries.filter(entry => entry.dob === today);
+
+  if (todaysEntries.length === 0) {
+    return "";
+  }
+
+  return todaysEntries.map(entry => entry.name).join(", ");
+}
+
+window.getTodaysEntries = getTodaysEntries;
+
 window.onload = loadData;
